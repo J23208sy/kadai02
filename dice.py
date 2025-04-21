@@ -1,8 +1,12 @@
 import random
 
+t = []
 for i in range(10):
     x = random.randint(1,6)
+    t.append(x)
     print(str(i+1)+"回目："+str(x))
+average = sum(t) / len(t)
+print("平均値：" + str(round(average, 1)))
 
 # 期待される出力結果例
 """
